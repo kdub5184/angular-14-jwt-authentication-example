@@ -15,6 +15,7 @@ import { LoginComponent } from './login';
 import { TilesComponent } from './tiles/tiles.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ConfigComponent } from './config/config.component';
+import { JackpotComponent } from './jackpot/jackpot.component';
 
 @NgModule({
     imports: [
@@ -29,7 +30,8 @@ import { ConfigComponent } from './config/config.component';
         LoginComponent,
         TilesComponent,
         DashboardComponent,
-        ConfigComponent
+        ConfigComponent,
+        JackpotComponent
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
