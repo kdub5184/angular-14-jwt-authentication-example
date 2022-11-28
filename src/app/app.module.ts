@@ -13,6 +13,8 @@ import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
 import { TilesComponent } from './tiles/tiles.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ConfigComponent } from './config/config.component';
 
 @NgModule({
     imports: [
@@ -25,7 +27,9 @@ import { TilesComponent } from './tiles/tiles.component';
         AppComponent,
         HomeComponent,
         LoginComponent,
-        TilesComponent
+        TilesComponent,
+        DashboardComponent,
+        ConfigComponent
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
